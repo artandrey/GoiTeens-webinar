@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    position: absolute;
+}
+body {
+    height: 100vh;
+    background: rgb(230, 230, 230);
+}
+body::before {
+    content: "";
+    display: block;
+    top: 20%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    position: absolute;
+    animation: plus-anim 30s linear infinite;
+    animation-delay: .3s;
+    opacity: 0.4;
+}
+body::after {
+    content: "";
+    display: block;
+    width: 300px;
+    bottom: 20%;
+    right: 5%;
+    height: 300px;
+    background-size: cover;
+    position: absolute;
+    animation: plus-anim 50s linear infinite;
+    opacity: 0.4;
+}
+main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section {
+    width: 40%;
+}
+h1 {
+    color: #222222;
+    text-align: center;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #ffffff85;
+    padding: 70px;
+    position: relative;
+    z-index: 3;
+    border-radius: 40px;
+    -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.5);
+}
+.vacancy-link {
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgb(212, 0, 0);
+}
+.main-list {
+    display: block;
+    height: max-content;
+}
+.main-list__item {
+    list-style: none;
+    background-color: #fcac00a9;
+    width: 320px;
+    margin: 20px 0;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 20px;
+    transition: .4s;
+}
+.main-list__item:hover {
+    background-color: #fcac00;
+}
+.main-list__item:nth-child(1) {
+    margin-top: 0;
+}
+.main-list__text {
+    color: #ffffff;
+}
+.marked-text {
+    text-decoration: underline;
+}
+.my-photo {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+}
+.name-text {
+    color: #222222;
+    background-color: #fcac00;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: dashed #222222 2px;
+}
+.contact-link {
+    padding: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #222222;
+}
+.contact-link:hover {
+    color: #fcac00;
+}
+@keyframes plus-anim {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+@media screen and (max-width:1200px) {
+    main {
+        flex-direction: column;
+    }
+    section {
+        width: 70%;
+    }
+    .main-list__item {
+        width: 200px;
+    }
+    .my-photo {
+        width: 300px;
+        height: 300px;
+    }
+}  

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    padding-top: 100px;
+}
+.main-section {
+    height: 100vh;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 200px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: url(../page-3/img-3/01e81a35e0d119aed42d2fb15ae6d7e5.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+}
+h2 {
+    background-color: rgb(41, 41, 41);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+.work-1 {
+ background-image: url(./img-2/Снимок\ экрана\ \(472\).png);
+ background-attachment: fixed;
+ background-size: cover;
+ width: 100%;
+ height: 100vh;
+}
+.work-2 {
+ background-image: url(./img-2/Снимок\ экрана\ \(471\).png);
+ background-attachment: fixed;
+ background-size: cover;
+ width: 100%;
+ height: 100vh;
+}
+.work-3 {
+     background-image: url(./img-2/Снимок\ экрана\ \(470\).png);
+     background-attachment: fixed;
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+}
+.work-4 {
+    background-image: url(./img-2/Снимок\ экрана\ \(473\).png);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
